@@ -1,0 +1,174 @@
+header>h1{
+    background-image: linear-gradient(
+    to bottom,
+    rgb(255 255 0/ 50%),
+    rgb(0 0 255 / 50%)
+  ), url("気持ちの悪い顔.bmp");
+    background-size: 50px 50px;
+    margin-bottom: 0px;
+}
+
+header > nav > a{
+    display: inline;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 1px;
+    margin-right: 1em;
+}
+
+h1{
+    color: #0000f0;
+}
+
+h2{
+    background: linear-gradient(transparent 60%, yellow 30%);
+    display: inline-block;
+}
+
+h3{
+    margin-right: 10px;
+}
+
+ul{
+    padding: .5em 1em;
+    margin: 2em 1em;
+    padding-left: 1em;
+    border: double 5px #4ec4d3;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+
+ol{
+    padding: .5em 1em;
+    margin: 2em 1em;
+    padding-left: 2em;
+    border: double 5px #d3c44e;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+
+table, td{
+    border: 1px solid #000000;
+}
+
+th{
+    border: 3px double #000000;
+}
+
+tr:nth-child(even){
+    background-color: #60ffff;
+}
+
+tr:nth-child(odd){
+    background-color: #ffff60;
+}
+
+ul{
+    list-style: none;
+}
+
+.abc{
+    font-size: 25px;
+    color: #ff00ff;
+    background-color: #ffffff;
+    border: 3px solid #ffffff;
+
+
+}
+
+.flex {
+    display: flex; /*横並び*/
+}
+
+.index{
+    font-size: 20px;
+    border-bottom: 3px solid #000000;
+    line-height: 1;
+    display: inline-block;
+    margin-bottom: .5em;
+}
+
+.grid{
+    display: grid;
+    grid-template-areas:
+        "header-c header-c"
+        "main-c aside-c"
+        "footer-c footer-c";
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
+    row-gap: 5px;  
+}
+
+
+header{
+    grid-area: header-c;
+}
+
+main{
+    grid-area: main-c;
+}
+
+aside{
+    grid-area: aside-c;
+}
+
+
+footer{
+    grid-area: footer-c;
+}
+
+p.text::first-letter{
+    font-size: 1.5em;
+}
+
+[href]{
+    font-size: 1.1rem;
+}
+
+[href]:hover{
+    font-size: 1.5rem;
+}
+label.title{
+    font-weight: bold;
+}
+label{
+    padding-bottom: 5px;
+}
+
+input[type=submit]{
+    margin:2px;
+    border-radius: 5px;
+    background: linear-gradient(0deg, #a0a0a0, #ffffff)
+}
+
+input[type=reset]{
+    margin:2px;
+    border-radius: 5px;
+    color: #f0f0f0;
+    background: linear-gradient(90deg, #ff00ff, #00ffff)
+}
+
+input[type=button]{
+    margin:8px;
+    border-radius: 5px;
+    color: #ffffff;
+    background: linear-gradient(45deg, #ff0000, #00ff00)
+}
+
+.jan{
+    border: 5px;
+    border-radius: 3px;
+    color: #ffffff;
+    box-shadow:
+        inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+        inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+    background-color: #d00000;
+}
+
+.jan:hover {
+    background-color: #ff0000;
+}
+  
+.jan:active {
+    box-shadow:
+        inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+        inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
