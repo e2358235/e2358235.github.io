@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Nagomu MURASAKI">
+	<link rel="stylesheet" href="style.css">
+	<title>ご感想フォーム</title>
+</head>
+
+<body>
+	<div class="grid">
+		<header>
+			<h1>田中太郎のにっき</h1>
+			<nav>
+				<a href="Home.html" target="_blank">Home</a>
+				<a href="感想.html" target="_blank">ご感想</a>
+				<a href="term.html" target="_blank">利用規約</a>
+			</nav>
+		</header>
+
+		<main>
+            <section>
+                <h2>ご感想フォーム</h2>
+                <form action="" method="post">
+                    <div>
+                        <label for="username" class="title">ペンネーム</label>
+                        <input type="text" name="name" id="username" placeholder="ユーザ名を入力"> 
+                        <br>
+                        <label class="title">
+                            ご感想（必須回答）
+                            <textarea name="remarks" cols="50" rows="10" required></textarea>
+                        </label>
+                    </div>
+
+                    <div>
+                        <label class="title">記事の面白さ</label>
+                        <input type="radio" name="fun" id="fun4" required>
+                        <label  for="fu4n">とても面白い</label>
+                        <input type="radio" name="fun" id="fun3">
+                        <label  for="fun3">どちらかと言えば面白い</label>
+                        <input type="radio" name="fun" id="fun2">
+                        <label  for="fun2">普通</label>
+                        <input type="radio" name="fun" id="fun1">
+                        <label  for="fun1">つまらん</label>
+                    </div>
+                    
+                    <div>
+                        <label for="email" class="title">メールアドレス</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+
+                    <div>
+                        <label for="pass" class="title">パスワード</label>
+                        <input type="password" name="password" id="pass">
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="check" id="agree">
+                        <label  for="agree"><a href="policy.html" target="_blank">「情報の取り扱い」</a>に同意</label>
+                    </div>
+                    <label for="date" class="title">日付（エラー報告など）</label>
+                    <input type="date" name="date" id="date">
+                    <div>
+                        <label for="color" class="title">好きな色</label>
+                        <input type="color" name="color" id="color">
+                    </div>
+                    <div>
+                        <label for="tel" class="title">ご連絡先</label>
+                        <input type="tel" name="tel" id="tel">
+                    </div>
+
+                    <div>
+                        <label for="file" class="title">応援イラストなど</label>
+                        <input type="file" name="file" id="file">
+                    </div>
+
+                    <div>
+                        <input type="submit" value="送信">
+                        <input type="reset" value="リセット">
+                        <input type="button" value="指の運動用" formaction="">
+                    </div>
+                </form>
+            </section>
+        </main>
+		<footer>
+			<a href="#top">
+				<p>トップに戻る</p>
+			</a>
+		</footer>
+	</div>
+
+</body>
+
+</html>
